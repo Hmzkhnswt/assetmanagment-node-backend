@@ -5,7 +5,7 @@ const {
   getJournalInvoice,
   updateJournalInvoice,
   updateInvoice,
-} = require('../controllers/transactionController');
+} = require('../controllers/journalentriesController');
 
 const router = express.Router();
 

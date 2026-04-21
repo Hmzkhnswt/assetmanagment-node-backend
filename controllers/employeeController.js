@@ -8,7 +8,7 @@ async function listEmployees(_req, res, next) {
        FROM employees
        ORDER BY external_id NULLS LAST, full_name`
     );
-    res.json({ employees: rows });
+    res.apiSuccess('Employees retrieved successfully.', { employees: rows });
   } catch (err) {
     next(err);
   }
